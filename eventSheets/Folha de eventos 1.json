@@ -1,0 +1,620 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Sprite12",
+					"sid": 939640883334928,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite12",
+					"sid": 451073253316405,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 908976326696999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Sprite12",
+					"sid": 474944886672873,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite12",
+					"sid": 316843820358728,
+					"parameters": {
+						"animation": "\"falling\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 101239281359154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite14",
+					"sid": 534282887519997,
+					"parameters": {
+						"object": "Sprite12"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Sprite12",
+					"sid": 317961129320395,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Sprite14.Y-20"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Sprite12",
+					"sid": 509293397497767,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 109746478984097,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 753749505891539
+				}
+			],
+			"sid": 541584208350764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 806813928311058,
+					"parameters": {
+						"object": "Sprite14"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Sprite12",
+					"sid": 793709368272185,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Sprite14.Y-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Sprite14",
+					"sid": 127951277205408,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 789041683839234,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite14",
+					"sid": 741122757639792
+				}
+			],
+			"sid": 775096306768593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Sprite12",
+					"sid": 860023008953014,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "Sprite13.X-600"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite13",
+					"sid": 313168742353265,
+					"parameters": {
+						"animation": "\"Atirar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 392322234977408
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Sprite13",
+					"sid": 332531207672567,
+					"parameters": {
+						"animation": "\"Atirar\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite13",
+					"sid": 343611577276241,
+					"parameters": {
+						"object": "Sprite17",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite13",
+					"sid": 316999135027705,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 737734303408175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite17",
+					"sid": 336844554360464
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Sprite17",
+					"sid": 565565407808202,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 815513418522132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite17",
+					"sid": 978644478127045,
+					"parameters": {
+						"object": "Sprite12"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Sprite12",
+					"sid": 928420679804289,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 576747163687223,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 108673143594728
+				}
+			],
+			"sid": 276937473161811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite18",
+					"sid": 454094106544814,
+					"parameters": {
+						"object": "Sprite20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite18",
+					"sid": 392792440537995,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 884821336791256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite18",
+					"sid": 598436544450243,
+					"parameters": {
+						"object": "Sprite21"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite18",
+					"sid": 128908846149878,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 570625315723603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite18",
+					"sid": 964893299746581,
+					"parameters": {
+						"object": "Sprite12"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Sprite12",
+					"sid": 259151367128125,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Sprite18.Y-20"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Sprite12",
+					"sid": 405171982337759,
+					"behaviorType": "Piscar",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 261824614454857,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 865706627126455
+				}
+			],
+			"sid": 903738190481773
+		},
+		{
+			"functionName": "dialogo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "BG_DIALOGO",
+					"sid": 399467940151909,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textodialogo",
+					"sid": 581769204815589,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 436134390613144,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BG_DIALOGO",
+					"sid": 936547322758136,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textodialogo",
+					"sid": 920397039390577,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 329916435219957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 712972077314755,
+					"parameters": {
+						"object": "mascote1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "textodialogo",
+					"sid": 621900554529601,
+					"parameters": {
+						"text": "\"Essa é a Ponte Pensil, que conecta São Vicente com Praia Grande. Tome cuidado com o trânsito!!!\""
+					}
+				},
+				{
+					"callFunction": "dialogo",
+					"sid": 202391386302163
+				}
+			],
+			"sid": 100271317766100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 741347930970575,
+					"parameters": {
+						"object": "Sprite22"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite23",
+					"sid": 723757657628642,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo2",
+					"sid": 460784278150232,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 635635799592892,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogo2",
+					"sid": 775714423059733,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite23",
+					"sid": 579177003430628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 177325309193902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 356011690059370,
+					"parameters": {
+						"object": "mascote3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "dialogofinal",
+					"sid": 240461052989462,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textofinal",
+					"sid": 508136285004455,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 142540464421084,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "dialogofinal",
+					"sid": 585607718912260,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "textofinal",
+					"sid": 110623617172851,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 664675945998623
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 726750417915622,
+					"parameters": {
+						"object": "SpritePG"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite25",
+					"sid": 170140801288635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto2",
+					"sid": 257572890010017,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 853404689895617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite12",
+					"sid": 725756384793221,
+					"parameters": {
+						"object": "matadormar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 947245072490822
+				}
+			],
+			"sid": 706219050682086
+		}
+	],
+	"sid": 609336166380942
+}

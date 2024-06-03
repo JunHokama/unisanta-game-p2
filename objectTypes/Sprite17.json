@@ -1,0 +1,49 @@
+{
+	"name": "Sprite17",
+	"plugin-id": "Sprite",
+	"sid": 624277666457907,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 609191416613891
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestruirForaDoLayout",
+			"sid": 146566873039148
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 11,
+						"height": 9,
+						"originX": 0.45454545454545453,
+						"originY": 0.4444444444444444,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3507198,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 634657344537300,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

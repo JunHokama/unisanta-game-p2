@@ -1,0 +1,328 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 38802,
+	"name": "ProjetoP2",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Plano de Fundo em Blocos",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Projétil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Piscar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Senóide",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destruir fora do layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Centrar em",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "76rh17ihom1",
+	"objectTypes": {
+		"items": [
+			"PlanoDeFundoEmBlocos",
+			"PlanoDeFundoEmBlocos2",
+			"PlanoDeFundoEmBlocos3",
+			"PlanoDeFundoEmBlocos4",
+			"PlanoDeFundoEmBlocos5",
+			"PlanoDeFundoEmBlocos6",
+			"Sprite",
+			"PlanoDeFundoEmBlocos7",
+			"PlanoDeFundoEmBlocos8",
+			"Sprite2",
+			"Sprite3",
+			"PlanoDeFundoEmBlocos9",
+			"Sprite4",
+			"PlanoDeFundoEmBlocos10",
+			"PlanoDeFundoEmBlocos11",
+			"PlanoDeFundoEmBlocos12",
+			"Sprite5",
+			"PlanoDeFundoEmBlocos13",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9",
+			"Texto",
+			"PlanoDeFundoEmBlocos14",
+			"PlanoDeFundoEmBlocos15",
+			"Sprite10",
+			"Sprite11",
+			"Sprite12",
+			"Sprite13",
+			"Sprite14",
+			"Sprite15",
+			"Sprite16",
+			"Sprite17",
+			"Sprite18",
+			"Sprite19",
+			"Sprite20",
+			"Sprite21",
+			"mascote1",
+			"BG_DIALOGO",
+			"Txt_dialogo",
+			"textodialogo",
+			"Sprite22",
+			"Sprite23",
+			"dialogo2",
+			"Sprite24",
+			"mascote3",
+			"dialogofinal",
+			"textofinal",
+			"SpritePG",
+			"Sprite25",
+			"Texto2",
+			"matadormar",
+			"Sprite26",
+			"c066f1be5a194d1d94c506dae9f4ed2c",
+			"pngtransparentpillarstonewhiteartthumbnail",
+			"ea402dba891bb6b2e78aa",
+			"pontepensil",
+			"Sprite27",
+			"pontepensil2",
+			"ea402dba891bb6b2e78aa2",
+			"pontepensil3",
+			"ea402dba891bb6b2e78aa3",
+			"ea402dba891bb6b2e78aa4",
+			"ea402dba891bb6b2e78aa5",
+			"ea402dba891bb6b2e78aa6"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Folha de eventos 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 285577119116563,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 414498453888336,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 570896125644602,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 773874227541856,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 762962061300609,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 366044292152648,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 853693673341326,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Linha do tempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": null
+}

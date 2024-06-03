@@ -1,0 +1,144 @@
+{
+	"name": "Sprite18",
+	"plugin-id": "Sprite",
+	"sid": 126224062440070,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "paraEsquerda",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 423294650119249
+		},
+		{
+			"name": "paraDireita",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 711898548055964
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 256950003577999
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide",
+			"sid": 759539326674105
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 38,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2507779,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.04761904761904767,
+								1,
+								0.8571428571428571,
+								0.9736842105263158,
+								0.9047619047619048,
+								0.868421052631579,
+								1,
+								0.10526315789473684,
+								1,
+								0.02631578947368418,
+								0.9047619047619048,
+								0,
+								0.8571428571428571,
+								0,
+								0.5714285714285714,
+								0.1842105263157895,
+								0.09523809523809523,
+								0.21052631578947367,
+								0.04761904761904767,
+								0.7105263157894737,
+								0,
+								0.9473684210526316,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 493262286322573,
+				"name": "indo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 38,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 565434,
+						"collisionPoly": {
+							"points": [
+								0.05263157894736842,
+								0,
+								0.2894736842105263,
+								0,
+								0.7894736842105263,
+								0.047619047619047616,
+								0.8157894736842105,
+								0.09523809523809523,
+								1,
+								0.5714285714285714,
+								1,
+								0.8571428571428571,
+								0.9736842105263158,
+								0.9047619047619048,
+								0.8947368421052632,
+								1,
+								0.13157894736842105,
+								1,
+								0.02631578947368421,
+								0.9047619047619048,
+								0,
+								0.8571428571428571,
+								0,
+								0.047619047619047616
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 870097842460745,
+				"name": "voltando",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

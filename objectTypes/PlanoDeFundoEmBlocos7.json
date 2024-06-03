@@ -1,0 +1,27 @@
+{
+	"name": "PlanoDeFundoEmBlocos7",
+	"plugin-id": "TiledBg",
+	"sid": 748191067950727,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 108105420366757
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8901285,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
